@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+/* Set Header */
+/* use the custom font like any other font */
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  background-color: #333333;
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+  display: flex;
+}
+.menu{
+  width: 10%;
+  margin-top: 10px;
+}
+.menu_icon{
+  width: 11.111%;
+  height: 44px;
+}
+
+.menu > a {
+  color: #fff;
+}
+.menu > a:hover{
+  color: #cacaca;
+}
+
+/* Set Body */
+.landing_page{
+  max-width: 1024px;
+  margin: 11px 128px 0px 128px;
+  padding: 0 10px;
+  display: flex;
+}
+.landing_1,
+.landing_2{
+  width: 49%;
+  display: inline-block;
+}
+.landing_1{
+  width: 420px;
+  height: 571px;
+  margin-left: 4px;
+}
+.landing_2{
+  width: 440px;
+  padding-top: 200px;
+  margin-left: 50px;
+}
+.landing_2 > img {
+  display: block;
+  width: 330px;
+  height: 61px;
+  margin: 0 auto 13px;
+}
+.landing_title{
+  text-align: center;
+  font-size: 39.5px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 27.5px;
+}
+
+.product_links {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.product_links > li {
+  font-size: 23.7px;
+  line-height: 1.3375;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.product_links > li > a{
+  color: #08c;
+}
+.product_links > li > a:hover{
+  text-decoration: underline;
+  color: #666;
+}
+
+.product_display{
+  margin-top: 16px;
+  display: flex;
+}
+.image{
+  min-width: 25%;
+  margin-right: 2px;
+}
+section > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.wall_plug_link{
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+}
+.wall_plug_link > a{
+  color: #08c;
+  letter-spacing: -0.1px;
+  line-height: 1.45;
+}
+
+/*Set Footer*/
+footer{
+  background-color: #F2F2F2;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 11.94px;
+  line-height: 1.66667;
+  font-weight: 400;
+  letter-spacing: -0.01px;
+  color: #666;
+}
+.footer_container{
+  padding: 0 22px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.footer_nav{
+  padding-top: 22px;
+  display: flex;
+}
+.col_5{
+  min-width: 20%;
+}
+.col_5 > ul > li:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.col_5 > ul > li > a{
+  text-decoration: none;
+  color: #666;
+}
+.col_5 > ul > li > a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+.footer_help{
+    padding: 20px 0px 24px 0px;
+    color: #999;
+}
+#legal_links{
+  display: flex;
+  margin-top: 5px;
+}
+#legal{
+  margin-right: 22px;
+}
+.footer_help > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+#legal_links > a:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+#locale {
+  margin-left: 240px;
+}
+#locale > a {
+  vertical-align: top;
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+}
+#locale > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#locale_flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 3px 0 no-repeat;
+  background-size: 16px 16px;
+  margin-top: 1px;
+  padding-right: 1px;
+}
