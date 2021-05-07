@@ -274,7 +274,7 @@ footer{
   padding-right: 12px;
 }
 #locale {
-  margin-left: 240px;
+  margin-left: auto;
 }
 #locale > a {
   vertical-align: top;
